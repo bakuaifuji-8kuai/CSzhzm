@@ -1,0 +1,34 @@
+{
+  "name": "zhiguang-hub",
+  "version": "2.1.0",
+  "description": "智光云枢-城市照明物联管控平台后台管理系统",
+  "author": "智光云枢研发团队",
+  "license": "Proprietary",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "docx": "^9.7.1",
+    "echarts": "^6.1.0",
+    "element-plus": "^2.6.0",
+    "html-to-image": "^1.11.13",
+    "jspdf": "^4.2.1",
+    "playwright": "^1.61.1",
+    "puppeteer-core": "^25.3.0",
+    "vue": "^3.4.21",
+    "vue-echarts": "^8.3.2",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "gh-pages": "^6.3.0",
+    "sass": "^1.71.0",
+    "typescript": "^7.0.2",
+    "vite": "^5.2.0"
+  }
+}
