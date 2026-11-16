@@ -25,7 +25,7 @@
         </div>
       </div>
       <div class="zg-am-ledger__cta">
-        <el-button type="primary"><el-icon><Plus /></el-icon>新建资产登记</el-button>
+        <el-button type="primary" @click="handleAdd"><el-icon><Plus /></el-icon>新建资产登记</el-button>
         <el-dropdown trigger="click">
           <el-button plain><el-icon><Download /></el-icon>导出</el-button>
           <template #dropdown>
@@ -595,6 +595,29 @@ function canTrans(s: AssetStatus) {
 // ============================================================
 // 动作
 // ============================================================
+function handleAdd() {
+  // 生成一个"新增模式"的空资产对象，传给 AssetDetail Drawer 打开
+  const newId = (rows.value.reduce((m, r) => Math.max(m, r.id), 0) || 1000) + 1
+  const today = new Date().toISOString().slice(0, 10)
+  detailRef.value?.open({
+    id: newId,
+    code: `AST-NEW-${String(newId).slice(-4)}`,
+    name: '',
+    category: 'lighting',
+    categoryLabel: '照明设备',
+    model: '',
+    brand: '',
+    spec: '',
+    purchaseDate: today,
+    originalValue: 0,
+    statusKey: 'inService',
+    statusLabel: '在用',
+    warrantyYears: 3,
+    serialNo: '',
+  })
+  ElMessage.info('已打开新增资产表单，请填写信息后保存')
+}
+
 function onRowClick(row: AssetRow) { detailRef.value?.open(row) }
 function onMonitorDetail(row: AssetRow) { detailRef.value?.open(row) }
 
