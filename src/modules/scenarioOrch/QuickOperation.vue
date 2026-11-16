@@ -151,7 +151,7 @@
                   <el-icon><VideoPlay /></el-icon>
                   <span>立即执行</span>
                 </el-button>
-                <el-button @click="onViewResult(scene)">
+                <el-button @click="onMonitorResult(scene)">
                   <el-icon><InfoFilled /></el-icon>
                   <span>上次执行</span>
                 </el-button>
@@ -1014,7 +1014,7 @@ const onExecuteScene = (scene) => {
   resultInspector.openInspector(scene)
 }
 
-const onViewResult = (scene) => {
+const onMonitorResult = (scene) => {
   if (!scene.lastExecuteTime) {
     ElMessage.info('该策略尚未执行过')
     return

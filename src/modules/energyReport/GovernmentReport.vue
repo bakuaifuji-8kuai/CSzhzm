@@ -47,7 +47,7 @@
         </div>
         <div class="zg-er-gov__editor-actions">
           <el-button type="primary" @click="triggerPdf"><el-icon><Download /></el-icon>生成 PDF</el-button>
-          <el-button @click="archiveReport"><el-icon><FolderOpened /></el-icon>归档到历史</el-button>
+          <el-button @click="archiveReport"><el-icon><Folder /></el-icon>归档到历史</el-button>
           <el-button @click="exportCsv"><el-icon><CopyDocument /></el-icon>下载模板 CSV</el-button>
         </div>
       </div>
@@ -131,7 +131,7 @@
     <!-- ===== 归档历史 ===== -->
     <div class="zg-er-gov__history">
       <div class="zg-er-gov__history-head">
-        <h3><el-icon><FolderOpened /></el-icon>历史归档（{{ history.length }} 项 · 近 12 个月）</h3>
+        <h3><el-icon><Folder /></el-icon>历史归档（{{ history.length }} 项 · 近 12 个月）</h3>
         <div class="zg-er-gov__history-head-right">
           <el-input v-model="historyFilter" placeholder="搜索月份 / 类型" style="width: 200px" :prefix-icon="Search" clearable />
           <el-button type="primary" @click="exportHistoryCsv"><el-icon><Download /></el-icon>导出全部</el-button>
@@ -168,7 +168,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { ElMessage } from 'element-plus'
-import { Document, Coin, Histogram, Collection, InfoFilled, FolderOpened, CopyDocument, Download, Search } from '@element-plus/icons-vue'
+import { Document, Coin, Histogram, Collection, InfoFilled, Folder, CopyDocument, Download, Search } from '@element-plus/icons-vue'
 
 const activeTpl = ref('monthly')
 const currentMonth = '2026 年 10 月'

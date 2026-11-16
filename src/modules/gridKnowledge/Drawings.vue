@@ -82,7 +82,7 @@
         <el-table-column prop="uploader" label="上传人" width="90" align="center" />
         <el-table-column label="操作" width="200" align="center" fixed="right">
           <template #default="{ row }">
-            <el-button link type="primary" size="small"><el-icon><View /></el-icon>预览</el-button>
+            <el-button link type="primary" size="small"><el-icon><Monitor /></el-icon>预览</el-button>
             <el-button link type="primary" size="small"><el-icon><Download /></el-icon>下载</el-button>
             <el-button link type="primary" size="small"><el-icon><Clock /></el-icon>历史</el-button>
           </template>
@@ -108,7 +108,7 @@
             </div>
           </div>
           <div class="zg-file-card__actions">
-            <el-button size="small" type="primary" round><el-icon><View /></el-icon>在线预览</el-button>
+            <el-button size="small" type="primary" round><el-icon><Monitor /></el-icon>在线预览</el-button>
           </div>
         </div>
       </div>
@@ -142,7 +142,7 @@
 
 <script setup>
 import { ref, reactive, computed } from 'vue'
-import { Document, Upload, FolderAdd, Search, List, Grid, View, Download, Clock, Printer } from "@element-plus/icons-vue"
+import { Document, Upload, FolderAdd, Search, List, Grid, Monitor, Download, Clock, Printer } from "@element-plus/icons-vue"
 
 const filter = reactive({ type: '', keyword: '' })
 const viewMode = ref('table')

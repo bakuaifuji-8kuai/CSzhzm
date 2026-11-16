@@ -438,12 +438,7 @@
 <script setup>
 import { ref, computed, reactive, onMounted } from 'vue';
 import { ElMessage } from 'element-plus';
-import {
-  Connection, Menu, MagicStick, Setting, Operation, Monitor,
-  Warning, TrendCharts, CircleCheck, PieChart, Key, Document,
-  Download, Collection, ChatDotRound, Promotion, CopyDocument,
-  Cpu, Refresh, ReadingLamp, Bell, Timer, PartlyCloudy, Coin
-} from '@element-plus/icons-vue';
+import { Connection, Menu, Edit, Setting, Operation, Monitor, Warning, TrendCharts, CircleCheck, PieChart, Key, Document, Download, Collection, ChatDotRound, Promotion, CopyDocument, Cpu, Refresh, ReadingLamp, Bell, Timer, PartlyCloudy, Coin } from '@element-plus/icons-vue';
 
 /* ============ API 目录数据 ============ */
 const apiGroups = [

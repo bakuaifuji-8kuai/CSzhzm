@@ -641,10 +641,7 @@
  */
 import { ref, reactive, computed, onMounted, onUnmounted } from 'vue'
 import { ElMessage } from 'element-plus'
-import {
-  Grid, Warning, Monitor, Cpu, Connection,
-  AlarmClock, Close, Check, Refresh, SwitchButton, MagicStick, Bell
-} from '@element-plus/icons-vue'
+import { Grid, Warning, Monitor, Cpu, Connection, AlarmClock, Close, Check, Refresh, SwitchButton, Edit, Bell } from '@element-plus/icons-vue'
 
 // ========== Mock 终端数据 ==========
 const mockTerminals = [

@@ -664,10 +664,7 @@
 <script setup>
 import { ref, reactive, computed, onMounted, onBeforeUnmount, watch } from 'vue'
 import { ElMessage } from 'element-plus'
-import {
-  Sunny, Cloudy, Drizzling, WindPower, Moon, PartlyCloudy, Warning, Monitor, DataLine,
-  Refresh, Search, Location, MagicStick,
-} from '@element-plus/icons-vue'
+import { Sunny, Cloudy, Drizzling, WindPower, Moon, PartlyCloudy, Warning, Monitor, DataLine, Refresh, Search, Location, Edit } from '@element-plus/icons-vue'
 
 /* ---------- KPI ---------- */
 const kpi = reactive({

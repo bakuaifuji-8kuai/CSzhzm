@@ -116,36 +116,7 @@
  */
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import {
-  Connection,
-  Coin,
-  Histogram,
-  MagicStick,
-  Tickets,
-  Guide,
-  ArrowLeft,
-  ArrowRight,
-  ArrowDown,
-  Bell,
-  ReadingLamp,
-  Grid,
-  Position,
-  Monitor,
-  Lock,
-  Iphone,
-  WindPower,
-  Platform,
-  House,
-  User,
-  Sunny,
-  Service,
-  Cpu,
-  Goods,
-  Warning,
-  Files,
-  Timer,
-  Lightning
-} from '@element-plus/icons-vue'
+import { Connection, Coin, Histogram, Edit, Tickets, Guide, ArrowLeft, ArrowRight, ArrowDown, Bell, ReadingLamp, Grid, Position, Monitor, Lock, Iphone, WindPower, Platform, House, User, Sunny, Service, Cpu, Goods, Warning, Files, Timer, Lightning, School, Document, Promotion, ShoppingCart, Folder, Wallet } from '@element-plus/icons-vue'
 import { ElMessage as Toast } from 'element-plus'
 import { getAuthStore, isAuthenticated } from '@/shared/stores/authStore'
 
@@ -461,7 +432,36 @@ const navList = [
     { name: '用电申请中心', path: '/powerApply/new' },
     { name: '用电申请 · 账单', path: '/powerApply/bills' },
     { name: '用电申请 · 结算', path: '/powerApply/settlement' },
-    { name: '用电申请 · 计量状态', path: '/powerApply/meterStatus' } ] }
+    { name: '用电申请 · 计量状态', path: '/powerApply/meterStatus' } ] },
+  // ⭐ 新增：招采与合约管理（闭环缺口补齐）
+  { name: '供应商管理', path: '/supplier', icon: School, children: [
+    { name: '供应商台账', path: '/supplier/ledger' } ] },
+  { name: '合约 · 合同管理', path: '/contract', icon: Document, children: [
+    { name: '合同台账', path: '/contract/ledger' },
+    { name: '合同详情', path: '/contract/detail' },
+    { name: '到期续期提醒', path: '/contract/renew' } ] },
+  { name: '车辆管理', path: '/vehicle', icon: Truck, children: [
+    { name: '车辆台账', path: '/vehicle/ledger' },
+    { name: '车辆调度', path: '/vehicle/schedule' },
+    { name: '车辆费用台账', path: '/vehicle/expense' },
+    { name: '车辆轨迹与考核', path: '/opsOrg/vehiclePerf' } ] },
+  { name: '采购管理', path: '/procurement', icon: ShoppingCart, children: [
+    { name: '采购申请', path: '/procurement/apply' },
+    { name: '采购订单', path: '/procurement/order' },
+    { name: '到货验收', path: '/procurement/arrival' } ] },
+  { name: '工程项目管理', path: '/project', icon: Folder, children: [
+    { name: '工程项目台账', path: '/project/ledger' },
+    { name: '施工进度', path: '/project/progress' },
+    { name: '验收与结项', path: '/project/accept' } ] },
+  { name: '财务结算中心', path: '/finance', icon: Wallet, children: [
+    { name: '结算总览', path: '/finance/settlement' },
+    { name: '发票管理', path: '/finance/invoice' },
+    { name: '收付款计划', path: '/finance/payment' } ] },
+  { name: '外包商管理', path: '/outsourcing', icon: User, children: [
+    { name: '外包商档案', path: '/outsourcing/ledger' },
+    { name: '外包商考核', path: '/outsourcing/eval' },
+    { name: '外包商合同绑定', path: '/outsourcing/contract' },
+    { name: '委外工单管理', path: '/opsTicket/outsourcing' } ] }
 ]
 
 const activeEntry = computed(() => route.path)

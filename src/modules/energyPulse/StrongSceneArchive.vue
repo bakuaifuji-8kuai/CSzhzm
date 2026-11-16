@@ -199,7 +199,7 @@
           :disabled="!selectedRows.length"
           @click="onBatchRetire"
         >
-          <el-icon><RefreshRight /></el-icon>
+          <el-icon><Refresh /></el-icon>
           <span>批量清退</span>
         </el-button>
         <span class="zg-batchbar__hint">已选 {{ selectedRows.length }} 条</span>
@@ -334,14 +334,7 @@
  */
 import { ref, computed } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
-import {
-  DocumentChecked,
-  Grid,
-  List,
-  Search,
-  RefreshLeft,
-  RefreshRight
-} from '@element-plus/icons-vue'
+import { Document, Grid, List, Search, Refresh } from '@element-plus/icons-vue'
 import { usePresetTable } from '@/shared/composables/usePresetTable'
 import { useDrawerInspector } from '@/shared/composables/useDrawerInspector'
 

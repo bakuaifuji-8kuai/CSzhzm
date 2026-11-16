@@ -153,7 +153,7 @@
           </div>
           <div class="zg-security__ai-tags">
             <div class="zg-security__ai-tag"><el-icon><Warning /></el-icon>人员入侵 · 置信度 96%</div>
-            <div class="zg-security__ai-tag"><el-icon><Van /></el-icon>车辆违停 · 置信度 88%</div>
+            <div class="zg-security__ai-tag"><el-icon><Truck /></el-icon>车辆违停 · 置信度 88%</div>
             <div class="zg-security__ai-tag"><el-icon><Delete /></el-icon>垃圾满溢 · 置信度 73%</div>
           </div>
         </div>
@@ -231,7 +231,7 @@
 
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
-import { Lock, Bell, Grid, VideoCamera, Warning, WarningFilled, Refresh, Van, Delete } from '@element-plus/icons-vue'
+import { Lock, Bell, Grid, VideoCamera, Warning, WarningFilled, Refresh, Promotion, Delete } from '@element-plus/icons-vue'
 
 const nowStr = ref('')
 let timer = null

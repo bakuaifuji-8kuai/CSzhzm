@@ -45,7 +45,7 @@
         </div>
       </div>
       <div class="zg-sp-kpi__cell">
-        <div class="zg-sp-kpi__icon zg-sp-kpi__icon--ok"><el-icon :size="22"><View /></el-icon></div>
+        <div class="zg-sp-kpi__icon zg-sp-kpi__icon--ok"><el-icon :size="22"><Monitor /></el-icon></div>
         <div class="zg-sp-kpi__body">
           <span class="zg-sp-kpi__num zg-sp-kpi__num--ok">{{ usingCount }}</span>
           <span class="zg-sp-kpi__lbl">使用中</span>
@@ -200,7 +200,7 @@
               <!-- 底部操作 -->
               <div class="zg-sp-card__actions">
                 <el-button link type="primary" size="small" @click="openDetailDrawer(t)">
-                  <el-icon><View /></el-icon>详情
+                  <el-icon><Monitor /></el-icon>详情
                 </el-button>
                 <el-button link type="primary" size="small" @click="showQrcodeDialog(t)">
                   <el-icon><Camera /></el-icon>生成二维码
@@ -917,7 +917,7 @@ import { ref, computed, reactive, onMounted } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import {
   Grid, Plus, Refresh, Location, Camera, Share, Download, Printer,
-  Histogram, Bell, View, Setting, Warning, Lock, Unlock, Search
+  Histogram, Bell, Monitor, Setting, Warning, Lock, Unlock, Search
 } from '@element-plus/icons-vue'
 
 // =============== 常量 =================

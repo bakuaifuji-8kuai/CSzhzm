@@ -203,7 +203,7 @@
           </el-table-column>
           <el-table-column label="处置" width="80" align="center">
             <template #default="{ row }">
-              <el-button type="primary" size="small" @click="onViewCircuitDetail(row)">详情</el-button>
+              <el-button type="primary" size="small" @click="onMonitorCircuitDetail(row)">详情</el-button>
             </template>
           </el-table-column>
         </el-table>
@@ -352,13 +352,7 @@
  */
 import { ref, computed } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
-import {
-  DataLine,
-  Grid,
-  List,
-  Search,
-  RefreshLeft
-} from '@element-plus/icons-vue'
+import { DataLine, Grid, List, Search, Refresh } from '@element-plus/icons-vue'
 import { usePresetTable } from '@/shared/composables/usePresetTable'
 import { useDrawerInspector } from '@/shared/composables/useDrawerInspector'
 
@@ -534,7 +528,7 @@ const onToggleCircuitDisplay = (circuit) => {
  * 查看链路详情：打开链路详情抽屉
  * @param {Object} circuit 目标链路记录
  */
-const onViewCircuitDetail = (circuit) => {
+const onMonitorCircuitDetail = (circuit) => {
   selectedCircuit.value = circuit
   circuitDetailDrawer.value.open = true
 }

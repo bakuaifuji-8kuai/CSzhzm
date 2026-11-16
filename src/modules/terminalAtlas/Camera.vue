@@ -370,15 +370,7 @@
  */
 import { ref, computed } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
-import {
-  VideoCamera,
-  Plus,
-  Grid,
-  List,
-  Search,
-  RefreshLeft,
-  MapLocation
-} from '@element-plus/icons-vue'
+import { VideoCamera, Plus, Grid, List, Search, Refresh, MapLocation } from '@element-plus/icons-vue'
 import { usePresetTable } from '@/shared/composables/usePresetTable'
 import { useFormDraft } from '@/shared/composables/useFormDraft'
 import { useDrawerInspector } from '@/shared/composables/useDrawerInspector'

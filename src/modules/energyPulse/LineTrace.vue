@@ -302,14 +302,7 @@
  */
 import { ref, computed } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
-import {
-  Guide,
-  Search,
-  Grid,
-  List,
-  RefreshLeft,
-  Position
-} from '@element-plus/icons-vue'
+import { Guide, Search, Grid, List, Refresh, Position } from '@element-plus/icons-vue'
 import { usePresetTable } from '@/shared/composables/usePresetTable'
 import { useDrawerInspector } from '@/shared/composables/useDrawerInspector'
 

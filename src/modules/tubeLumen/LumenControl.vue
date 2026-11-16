@@ -629,15 +629,7 @@
  */
 import { ref, computed } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
-import {
-  Sunny,
-  Plus,
-  Grid,
-  List,
-  Search,
-  RefreshLeft,
-  Lightning
-} from '@element-plus/icons-vue'
+import { Sunny, Plus, Grid, List, Search, Refresh, Lightning } from '@element-plus/icons-vue'
 import { usePresetTable } from '@/shared/composables/usePresetTable'
 import { useFormDraft } from '@/shared/composables/useFormDraft'
 import { useDrawerInspector } from '@/shared/composables/useDrawerInspector'

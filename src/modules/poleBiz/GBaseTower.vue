@@ -185,7 +185,7 @@
 <script setup>
 import { ref, computed, onMounted, reactive } from 'vue'
 import { ElMessage as Toast } from 'element-plus'
-import { Cpu, Plus, Search, DocumentChecked } from '@element-plus/icons-vue'
+import { Cpu, Plus, Search, Document } from '@element-plus/icons-vue'
 import { gBaseStations } from '@/data/mockData'
 
 const rawList = ref([])

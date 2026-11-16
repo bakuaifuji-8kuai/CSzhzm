@@ -149,7 +149,7 @@
           <span class="zg-archivecard__time">{{ archive.archiveDate }}</span>
           <div class="zg-archivecard__actions">
             <el-button link type="primary" size="small" @click.stop="onRestoreArchive(archive)">
-              <el-icon><RefreshRight /></el-icon>
+              <el-icon><Refresh /></el-icon>
               <span>还原</span>
             </el-button>
             <el-button link type="danger" size="small" @click.stop="onRetireArchive(archive)">删除</el-button>
@@ -294,7 +294,7 @@
             size="large"
             @click="onRestoreArchive(focusedArchive)"
           >
-            <el-icon><RefreshRight /></el-icon>
+            <el-icon><Refresh /></el-icon>
             <span>还原策略</span>
           </el-button>
         </div>
@@ -314,14 +314,7 @@
  */
 import { ref, computed, watch } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
-import {
-  DocumentChecked,
-  Grid,
-  List,
-  Search,
-  RefreshLeft,
-  RefreshRight
-} from '@element-plus/icons-vue'
+import { Document, Grid, List, Search, Refresh } from '@element-plus/icons-vue'
 import { usePresetTable } from '@/shared/composables/usePresetTable'
 import { useDrawerInspector } from '@/shared/composables/useDrawerInspector'
 

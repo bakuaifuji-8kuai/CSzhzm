@@ -192,7 +192,7 @@
 
 <script setup>
 import { ref, reactive, computed, onMounted, onUnmounted } from 'vue'
-import { ReadingLamp, VideoPlay, RefreshLeft } from '@element-plus/icons-vue'
+import { ReadingLamp, VideoPlay, Refresh } from '@element-plus/icons-vue'
 import { followLightTunnel } from '@/data/mockData'
 
 // ========== 状态 ==========

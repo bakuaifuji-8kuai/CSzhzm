@@ -144,13 +144,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import {
-  Connection,
-  Plus,
-  Delete,
-  Search,
-  RefreshLeft
-} from '@element-plus/icons-vue'
+import { Connection, Plus, Delete, Search, Refresh } from '@element-plus/icons-vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import { usePresetTable } from '@/shared/composables/usePresetTable'
 import { useFormDraft } from '@/shared/composables/useFormDraft'

@@ -159,10 +159,7 @@
 
 <script setup>
 import { ref, reactive, computed, onMounted, onUnmounted } from 'vue'
-import {
-  Cpu, Monitor, Warning, Sunny, Lock, Opportunity, View, DataAnalysis, Timer,
-  SuccessFilled, InfoFilled, Bell
-} from '@element-plus/icons-vue'
+import {Cpu, Monitor, Warning, Sunny, Lock, Opportunity, DataAnalysis, Timer, SuccessFilled, InfoFilled, Bell} from '@element-plus/icons-vue'
 
 /* ====== KPI ====== */
 const totalCameras = 384
@@ -214,7 +211,7 @@ const models = reactive([
   { key: 'lamp', name: '💡 灯具故障', icon: Sunny, on: true, count: 18, avgConf: 94, color: '#f59e0b' },
   { key: 'cabinet', name: '🧰 配电箱异常', icon: Lock, on: true, count: 6, avgConf: 96, color: '#8b5cf6' },
   { key: 'crack', name: '🔩 杆身裂痕/配件', icon: Opportunity, on: true, count: 4, avgConf: 91, color: '#3b82f6' },
-  { key: 'accept', name: '🌃 夜间照明验收', icon: View, on: true, count: 3, avgConf: 88, color: '#10b981' },
+  { key: 'accept', name: '🌃 夜间照明验收', icon: Monitor, on: true, count: 3, avgConf: 88, color: '#10b981' },
   { key: 'smoke', name: '⚠️ 隧道烟雾/火情', icon: Warning, on: true, count: 2, avgConf: 98, color: '#ef4444' },
   { key: 'top', name: '📷 杆顶附件状态', icon: Monitor, on: true, count: 5, avgConf: 92, color: '#0ea5e9' },
   { key: 'intrude', name: '🚪 区域入侵', icon: Lock, on: true, count: 2, avgConf: 95, color: '#f97316' }

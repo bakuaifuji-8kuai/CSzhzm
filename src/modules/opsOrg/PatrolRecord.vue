@@ -156,7 +156,7 @@
             <el-table-column label="处置" width="180">
               <template #default="{ row }">
                 <el-tag v-if="row.autoTicket" size="small" type="info" effect="plain">
-                  <el-icon><View /></el-icon> 工单 {{ row.ticketNo }}
+                  <el-icon><Monitor /></el-icon> 工单 {{ row.ticketNo }}
                 </el-tag>
                 <el-tag v-else size="small" type="success" effect="plain">直接处理</el-tag>
               </template>
@@ -202,7 +202,7 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { ElMessage } from 'element-plus'
-import { Position, Plus, Check, Warning, View, Refresh } from "@element-plus/icons-vue"
+import { Position, Plus, Check, Warning, Monitor, Refresh } from "@element-plus/icons-vue"
 import { calcDistance, patrolPoints, patrolRecords, orders, tickets } from '@/shared/stores/opsOrgStore'
 
 // ---- KPI ----

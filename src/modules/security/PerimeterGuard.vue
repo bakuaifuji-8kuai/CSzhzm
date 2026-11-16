@@ -212,10 +212,7 @@
 
 <script setup>
 import { ref, computed } from 'vue'
-import {
-  VideoCamera, Cpu, CircleCheck, Warning, Monitor, VideoPause,
-  User, Van, Box, MoreFilled
-} from '@element-plus/icons-vue'
+import { VideoCamera, Cpu, CircleCheck, Warning, Monitor, VideoPause, User, Promotion, Box, MoreFilled } from '@element-plus/icons-vue'
 
 const camDetailVisible = ref(false)
 const focusCam = ref(null)
@@ -233,7 +230,7 @@ const cameraWall = ref([
 // AI 统计
 const aiStats = ref([
   { type: '人员闯入', count: 18, color: '#ef4444', icon: User },
-  { type: '车辆违停', count: 14, color: '#f59e0b', icon: Van },
+  { type: '车辆违停', count: 14, color: '#f59e0b', icon: Truck },
   { type: '物品遗留', count: 8, color: '#6366f1', icon: Box },
   { type: '翻越围栏', count: 6, color: '#22c55e', icon: MoreFilled },
 ])

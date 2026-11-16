@@ -1,11 +1,7 @@
 <script setup>
 import { ref, computed, reactive } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
-import {
-  OfficeBuilding, Key, User, Avatar, Coin, Money, Document, Download,
-  Check, Warning, Refresh, Plus, Filter, Calendar, Search, Setting,
-  CircleClose, Tickets, UserFilled, Service, CreditCard, Timer, Shop
-} from '@element-plus/icons-vue'
+import {School, Key, User, Avatar, Coin, Money, Document, Download, Check, Warning, Refresh, Plus, Filter, Calendar, Search, Setting, CircleClose, Tickets, Service, CreditCard, Timer, Shop} from '@element-plus/icons-vue'
 
 /* ============================================================
  * 共享用电 · 企业客户中心
@@ -249,7 +245,7 @@ const roleIcon = (role) => ({
       <el-avatar :size="64" class="banner-avatar">{{ currentCompany.name.slice(0, 1) }}</el-avatar>
       <div>
         <div class="banner-title">
-          <OfficeBuilding class="icon" />
+          <School class="icon" />
           <span>{{ currentCompany.name }}</span>
           <el-tag type="success" effect="dark" size="small" v-if="currentCompany.status === '已认证'">✅ 已认证</el-tag>
           <el-tag type="warning" size="small" v-else-if="currentCompany.status === '审核中'">⏳ 审核中</el-tag>
@@ -276,7 +272,7 @@ const roleIcon = (role) => ({
         <el-card class="auth-info" shadow="hover">
           <template #header>
             <div class="card-header">
-              <span><OfficeBuilding /> 企业信息</span>
+              <span><School /> 企业信息</span>
               <el-badge class="pass-badge" v-if="currentCompany.status === '已认证'">
                 <el-tag type="success" effect="dark" round>✅ 已认证 · {{ currentCompany.passDate }} 审核通过</el-tag>
               </el-badge>

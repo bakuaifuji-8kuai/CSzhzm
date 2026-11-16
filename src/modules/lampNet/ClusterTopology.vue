@@ -192,13 +192,7 @@
  */
 import { ref, computed } from 'vue'
 import { ElMessage } from 'element-plus'
-import {
-  Share,
-  RefreshLeft,
-  Search,
-  ZoomIn,
-  ZoomOut
-} from '@element-plus/icons-vue'
+import { Share, Refresh, Search, ZoomIn, ZoomOut } from '@element-plus/icons-vue'
 import { useDrawerInspector } from '@/shared/composables/useDrawerInspector'
 
 // ---- 视图缩放 ----

@@ -207,7 +207,7 @@
               <div class="zg-fixturecard__actions">
                 <el-button link type="primary" size="small" @click.stop="onTurnOn(fixture)">开灯</el-button>
                 <el-button link type="danger" size="small" @click.stop="onTurnOff(fixture)">关灯</el-button>
-                <el-button link type="primary" size="small" @click.stop="onViewSwitchRecord(fixture)">记录</el-button>
+                <el-button link type="primary" size="small" @click.stop="onMonitorSwitchRecord(fixture)">记录</el-button>
               </div>
             </div>
           </article>
@@ -251,7 +251,7 @@
             <el-table-column label="处置" width="200" align="center" fixed="right">
               <template #default="{ row }">
                 <el-button type="primary" size="small" @click="fixtureInspector.openInspector(row)">详情</el-button>
-                <el-button size="small" @click="onViewSwitchRecord(row)">记录</el-button>
+                <el-button size="small" @click="onMonitorSwitchRecord(row)">记录</el-button>
               </template>
             </el-table-column>
           </el-table>
@@ -428,15 +428,7 @@
  */
 import { ref, computed } from 'vue'
 import { ElMessage } from 'element-plus'
-import {
-  Sunny,
-  Plus,
-  Grid,
-  List,
-  Search,
-  RefreshLeft,
-  Lightning
-} from '@element-plus/icons-vue'
+import { Sunny, Plus, Grid, List, Search, Refresh, Lightning } from '@element-plus/icons-vue'
 import { usePresetTable } from '@/shared/composables/usePresetTable'
 import { useDrawerInspector } from '@/shared/composables/useDrawerInspector'
 
@@ -659,7 +651,7 @@ const onDimmingConfirm = () => {
  * 查看开关灯记录：打开记录抽屉
  * @param {Object} target 目标光源
  */
-const onViewSwitchRecord = (target) => {
+const onMonitorSwitchRecord = (target) => {
   fixtureInspector.focusedRecord = target
   showRecordDrawer.value = true
 }

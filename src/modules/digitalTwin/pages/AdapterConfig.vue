@@ -138,7 +138,7 @@
 
 <script setup lang="ts">
 import { ref, reactive, computed, onMounted, onUnmounted, shallowRef } from 'vue'
-import { Connection, Link, Setting, Promotion, MagicStick, Document, MapLocation } from '@element-plus/icons-vue'
+import { Connection, Link, Setting, Promotion, Edit, Document, MapLocation } from '@element-plus/icons-vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import TwinAdapter, { AssetTwinMapping, TwinConfig, TwinRealtimeEvent } from '../adapter/TwinAdapter'
 

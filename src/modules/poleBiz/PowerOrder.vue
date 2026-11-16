@@ -489,7 +489,7 @@
 import { ref, computed, reactive, onMounted, onUnmounted } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import {
-  Grid, Coin, Warning, View, Bell, Refresh, Close, Check,
+  Grid, Coin, Warning, Monitor, Bell, Refresh, Close, Check,
   Download, Printer, Search, Filter, Timer, DataLine, Plus, CopyDocument
 } from '@element-plus/icons-vue'
 

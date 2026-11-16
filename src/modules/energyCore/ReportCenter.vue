@@ -74,7 +74,7 @@
       </el-table-column>
       <el-table-column label="操作" width="220" fixed="right">
         <template #default="{ row }">
-          <el-button link type="primary" size="small" :icon="View">预览</el-button>
+          <el-button link type="primary" size="small" :icon="Monitor">预览</el-button>
           <el-button link type="primary" size="small" :icon="Download">Excel</el-button>
           <el-button link type="primary" size="small" :icon="Download">PDF</el-button>
           <el-button link type="primary" size="small" :icon="Share">分享</el-button>
@@ -86,7 +86,7 @@
 
 <script setup>
 import { ref, computed, reactive } from 'vue'
-import { Coin, Document, Download, Plus, Star, Search, View, Share } from "@element-plus/icons-vue"
+import { Coin, Document, Download, Plus, Star, Search, Monitor, Share } from "@element-plus/icons-vue"
 
 function periodColor(p) {
   return p === '日报' ? 'info' : p === '月报' ? '' : p === '年报' ? 'warning' : 'success'

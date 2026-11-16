@@ -533,7 +533,33 @@ const routes = [
   // ========== ★ 新增：用电申请扩展 ==========
   { path: '/powerApply/bills', name: 'powerApply.bills', component: () => import('@/modules/powerApply/Bills.vue'), meta: { title: '电费账单' } },
   { path: '/powerApply/settlement', name: 'powerApply.settlement', component: () => import('@/modules/powerApply/Settlement.vue'), meta: { title: '电费结算' } },
-  { path: '/powerApply/meterStatus', name: 'powerApply.meterStatus', component: () => import('@/modules/powerApply/MeterStatus.vue'), meta: { title: '计量接口状态' } }
+  { path: '/powerApply/meterStatus', name: 'powerApply.meterStatus', component: () => import('@/modules/powerApply/MeterStatus.vue'), meta: { title: '计量接口状态' } },
+  // ========== ★ 新增：供应商管理 ==========
+  { path: '/supplier/ledger', name: 'supplier.ledger', component: () => import('@/modules/supplier/SupplierLedger.vue'), meta: { title: '供应商台账' } },
+  // ========== ★ 新增：合约合同管理 ==========
+  { path: '/contract/ledger', name: 'contract.ledger', component: () => import('@/modules/contract/ContractLedger.vue'), meta: { title: '合同台账' } },
+  { path: '/contract/detail', name: 'contract.detail', component: () => import('@/modules/contract/ContractDetail.vue'), meta: { title: '合同详情' } },
+  { path: '/contract/renew', name: 'contract.renew', component: () => import('@/modules/contract/ContractRenew.vue'), meta: { title: '到期续期提醒' } },
+  // ========== ★ 新增：车辆管理 ==========
+  { path: '/vehicle/ledger', name: 'vehicle.ledger', component: () => import('@/modules/vehicle/VehicleLedger.vue'), meta: { title: '车辆台账' } },
+  { path: '/vehicle/schedule', name: 'vehicle.schedule', component: () => import('@/modules/vehicle/VehicleSchedule.vue'), meta: { title: '车辆调度' } },
+  { path: '/vehicle/expense', name: 'vehicle.expense', component: () => import('@/modules/vehicle/VehicleExpense.vue'), meta: { title: '车辆费用台账' } },
+  // ========== ★ 新增：采购管理 ==========
+  { path: '/procurement/apply', name: 'procurement.apply', component: () => import('@/modules/procurement/PurchaseApply.vue'), meta: { title: '采购申请' } },
+  { path: '/procurement/order', name: 'procurement.order', component: () => import('@/modules/procurement/PurchaseOrder.vue'), meta: { title: '采购订单' } },
+  { path: '/procurement/arrival', name: 'procurement.arrival', component: () => import('@/modules/procurement/PurchaseArrival.vue'), meta: { title: '到货验收' } },
+  // ========== ★ 新增：工程项目管理 ==========
+  { path: '/project/ledger', name: 'project.ledger', component: () => import('@/modules/project/ProjectLedger.vue'), meta: { title: '工程项目台账' } },
+  { path: '/project/progress', name: 'project.progress', component: () => import('@/modules/project/ProjectProgress.vue'), meta: { title: '施工进度' } },
+  { path: '/project/accept', name: 'project.accept', component: () => import('@/modules/project/ProjectAccept.vue'), meta: { title: '验收与结项' } },
+  // ========== ★ 新增：财务结算中心 ==========
+  { path: '/finance/settlement', name: 'finance.settlement', component: () => import('@/modules/finance/SettlementCenter.vue'), meta: { title: '结算总览' } },
+  { path: '/finance/invoice', name: 'finance.invoice', component: () => import('@/modules/finance/InvoiceManage.vue'), meta: { title: '发票管理' } },
+  { path: '/finance/payment', name: 'finance.payment', component: () => import('@/modules/finance/PaymentPlan.vue'), meta: { title: '收付款计划' } },
+  // ========== ★ 新增：外包商管理 ==========
+  { path: '/outsourcing/ledger', name: 'outsourcing.ledger', component: () => import('@/modules/outsourcingManage/OutsourcingLedger.vue'), meta: { title: '外包商档案' } },
+  { path: '/outsourcing/eval', name: 'outsourcing.eval', component: () => import('@/modules/outsourcingManage/OutsourcingEval.vue'), meta: { title: '外包商考核' } },
+  { path: '/outsourcing/contract', name: 'outsourcing.contract', component: () => import('@/modules/outsourcingManage/OutsourcingContract.vue'), meta: { title: '外包商合同绑定' } }
 ]
 
 const router = createRouter({

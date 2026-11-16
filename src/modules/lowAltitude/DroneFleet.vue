@@ -133,16 +133,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import { ElMessage } from 'element-plus'
-import {
-  Promotion,
-  House,
-  Cpu,
-  LocationFilled,
-  MagicStick,
-  Odometer,
-  Sunny,
-  VideoPlay,
-} from '@element-plus/icons-vue'
+import { Promotion, House, Cpu, LocationFilled, Edit, Odometer, Sunny, VideoPlay } from '@element-plus/icons-vue'
 
 const regions = ['岳麓区·先导路', '岳麓区·梅溪湖', '岳麓区·橘子洲头', '岳麓区·麓谷大道']
 const statusPoolDrone: Status[] = ['cruise', 'cruise', 'cruise', 'cruise', 'cruise', 'cruise', 'charging', 'charging', 'charging', 'charging', 'fault', 'standby', 'standby', 'standby']

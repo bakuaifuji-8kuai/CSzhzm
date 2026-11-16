@@ -44,7 +44,7 @@
           <el-table-column label="数据来源追溯" width="90" align="center">
             <template #default="{ row }">
               <el-button link type="primary" size="small" @click="expandTrace(row)">
-                <el-icon><View /></el-icon>
+                <el-icon><Monitor /></el-icon>
               </el-button>
             </template>
           </el-table-column>
@@ -105,7 +105,7 @@
             </div>
             <div class="zg-energy__fill-cta">
               <el-button v-if="f.progress < 100" type="primary" size="small" :icon="Edit">继续填报</el-button>
-              <el-button v-else size="small" :icon="View">查看已填</el-button>
+              <el-button v-else size="small" :icon="Monitor">查看已填</el-button>
               <el-button size="small" :icon="Share">分享</el-button>
             </div>
           </div>
@@ -183,7 +183,7 @@
 
 <script setup>
 import { ref, reactive, computed } from 'vue'
-import { Coin, Download, Setting, View, Edit, Share, Search, Connection, Document, List } from "@element-plus/icons-vue"
+import { Coin, Download, Setting, Monitor, Edit, Share, Search, Connection, Document, List } from "@element-plus/icons-vue"
 
 const activeTab = ref('list')
 const traceVisible = ref(false)

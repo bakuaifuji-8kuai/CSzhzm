@@ -365,14 +365,7 @@
  */
 import { ref, computed } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
-import {
-  Connection,
-  Plus,
-  Grid,
-  List,
-  Search,
-  RefreshLeft
-} from '@element-plus/icons-vue'
+import { Connection, Plus, Grid, List, Search, Refresh } from '@element-plus/icons-vue'
 import { usePresetTable } from '@/shared/composables/usePresetTable'
 import { useFormDraft } from '@/shared/composables/useFormDraft'
 import { useDrawerInspector } from '@/shared/composables/useDrawerInspector'

@@ -200,16 +200,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import { ElMessage } from 'element-plus'
-import {
-  Promotion,
-  LocationFilled,
-  Clock,
-  Edit,
-  MagicStick,
-  TrendCharts,
-  Files,
-  Calendar,
-} from '@element-plus/icons-vue'
+import { Promotion, LocationFilled, Clock, Edit, TrendCharts, Files, Calendar } from '@element-plus/icons-vue'
 
 const kpis = [
   { id: 'today', label: '今日计划', value: 8, grad: 'linear-gradient(135deg,#6366f1,#a855f7)', icon: MagicStick, valColor: '#6366f1' },

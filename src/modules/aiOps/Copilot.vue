@@ -153,7 +153,7 @@
                 </div>
                 <div class="zg-cop__diag-foot">
                   <el-button type="primary" size="small">重新合闸</el-button>
-                  <el-button size="small" :icon="View">查看工单</el-button>
+                  <el-button size="small" :icon="Monitor">查看工单</el-button>
                   <el-button size="small">关闭远程电源</el-button>
                 </div>
               </div>
@@ -443,10 +443,7 @@ import { ref, reactive, nextTick, onMounted } from 'vue'
 import {
   ElMessage,
 } from 'element-plus'
-import {
-  Cpu, MagicStick, Service, Operation, View, Timer, Warning, Download, Collection,
-  RefreshLeft, Promotion, Paperclip, Delete,
-} from '@element-plus/icons-vue'
+import { Cpu, Edit, Service, Operation, Monitor, Timer, Warning, Download, Collection, Refresh, Promotion, Paperclip, Delete } from '@element-plus/icons-vue'
 
 /* ---------- KPI ---------- */
 const kpi = reactive({

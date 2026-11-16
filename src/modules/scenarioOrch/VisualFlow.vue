@@ -838,13 +838,7 @@
 <script setup>
 import { ref, reactive, computed, onMounted, onBeforeUnmount, nextTick } from 'vue';
 import { ElMessage, ElMessageBox } from 'element-plus';
-import {
-  Connection, MagicStick, Refresh, Setting, Operation, Monitor,
-  Warning, Timer, PartlyCloudy, Coin, ReadingLamp, Bell,
-  QuestionFilled, Download, Delete, VideoPlay, Promotion, Upload,
-  ZoomIn, ZoomOut, Close, InfoFilled, Sunny, Moon, ChatLineRound,
-  Cpu, Lightning, CircleCheck, Share
-} from '@element-plus/icons-vue';
+import { Connection, Edit, Refresh, Setting, Operation, Monitor, Warning, Timer, PartlyCloudy, Coin, ReadingLamp, Bell, QuestionFilled, Download, Delete, VideoPlay, Promotion, Upload, ZoomIn, ZoomOut, Close, InfoFilled, Sunny, Moon, ChatLineRound, Cpu, Lightning, CircleCheck, Share } from '@element-plus/icons-vue';
 
 /* ============ 常量 / 元数据 ============ */
 const version = '1.2';

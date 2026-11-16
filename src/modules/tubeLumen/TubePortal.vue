@@ -146,7 +146,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { ElMessage } from 'element-plus'
-import { Guide, SuccessFilled, WarningFilled, PieChart, Warning, RefreshLeft } from '@element-plus/icons-vue'
+import { Guide, SuccessFilled, WarningFilled, PieChart, Warning, Refresh } from '@element-plus/icons-vue'
 import { useTubeStore } from '@/shared/stores/tubeStore'
 
 const tubeStore = useTubeStore()

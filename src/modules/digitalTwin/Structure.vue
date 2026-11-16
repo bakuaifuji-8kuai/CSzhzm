@@ -38,7 +38,7 @@
           />
         </el-select>
         <el-button-group>
-          <el-button :icon="Refresh" @click="resetView">重置视角</el-button>
+          <el-button :icon="Refresh" @click="resetMonitor">重置视角</el-button>
         </el-button-group>
       </div>
     </header>
@@ -263,7 +263,7 @@
         <!-- 视角控制 -->
         <div class="zg-ts__view-ctrl">
           <div class="zg-ts__slider-row">
-            <span class="zg-ts__slider-label"><el-icon :size="14"><View /></el-icon> 旋转 Y</span>
+            <span class="zg-ts__slider-label"><el-icon :size="14"><Monitor /></el-icon> 旋转 Y</span>
             <el-slider v-model="viewY" :min="0" :max="360" :step="1" class="zg-ts__slider" />
             <span class="zg-ts__val">{{ viewY }}°</span>
           </div>
@@ -402,10 +402,7 @@
 
 <script setup>
 import { ref, computed, onMounted, onBeforeUnmount, watch } from 'vue'
-import {
-  Monitor, Connection, Camera, Grid, MagicStick, Setting, Refresh, View,
-  Expand, ZoomIn, ZoomOut, Sunny, Service, Cpu, Compass
-} from '@element-plus/icons-vue'
+import { Monitor, Connection, Camera, Grid, Edit, Setting, Refresh, Expand, ZoomIn, ZoomOut, Sunny, Service, Cpu, Compass } from '@element-plus/icons-vue'
 
 /* ---------- 灯杆型号数据 ---------- */
 const poleModels = [
@@ -457,7 +454,7 @@ const viewX = ref(55)
 const viewScale = ref(1)
 const sectionMode = ref(false)
 
-const resetView = () => {
+const resetMonitor = () => {
   viewY.value = 30
   viewX.value = 55
   viewScale.value = 1

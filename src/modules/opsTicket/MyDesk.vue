@@ -9,7 +9,7 @@
     <header class="zg-mydesk__head">
       <div class="zg-mydesk__headline">
         <div class="zg-mydesk__sigil">
-          <el-icon :size="22"><UserFilled /></el-icon>
+          <el-icon :size="22"><User /></el-icon>
         </div>
         <div class="zg-mydesk__copy">
           <h1 class="zg-mydesk__title">我的工作台</h1>
@@ -336,7 +336,7 @@
  */
 import { ref, computed } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
-import { UserFilled, Tickets, Grid, List, Search, Refresh } from "@element-plus/icons-vue"
+import { User, Tickets, Grid, List, Search, Refresh } from "@element-plus/icons-vue"
 import { usePresetTable } from '@/shared/composables/usePresetTable'
 import { useDrawerInspector } from '@/shared/composables/useDrawerInspector'
 

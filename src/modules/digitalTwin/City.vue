@@ -78,8 +78,8 @@
           />
           <span class="zg-twin__val">{{ viewX }}°</span>
         </div>
-        <el-button size="small" round @click="resetView">
-          <el-icon><RefreshRight /></el-icon> 重置视角
+        <el-button size="small" round @click="resetMonitor">
+          <el-icon><Refresh /></el-icon> 重置视角
         </el-button>
       </div>
     </header>
@@ -442,7 +442,7 @@
 import { ref, computed, reactive, onMounted, onUnmounted } from 'vue'
 import {
   Cpu, Monitor, Place, Camera, CaretTop, DataBoard, Histogram,
-  Compass, Grid, WarningFilled, Timer, Connection, RefreshRight, Close,
+  Compass, Grid, WarningFilled, Timer, Connection, Refresh, Close,
   Warning
 } from '@element-plus/icons-vue'
 
@@ -736,7 +736,7 @@ function alertStyle(a) {
    交互函数
 ------------------------------------------------------------------ */
 
-function resetView() {
+function resetMonitor() {
   viewX.value = 55
   viewY.value = -35
 }

@@ -156,7 +156,7 @@
             <el-button link type="primary" size="small" @click.stop="onDimming(lamp)">
               调光
             </el-button>
-            <el-button link type="info" size="small" @click.stop="onViewSwitchRecord(lamp)">
+            <el-button link type="info" size="small" @click.stop="onMonitorSwitchRecord(lamp)">
               记录
             </el-button>
           </div>
@@ -187,7 +187,7 @@
             <el-button type="success" size="small" @click="onTurnOn(row)">开灯</el-button>
             <el-button type="warning" size="small" @click="onTurnOff(row)">关灯</el-button>
             <el-button type="primary" size="small" @click="onDimming(row)">调光</el-button>
-            <el-button type="info" size="small" @click="onViewSwitchRecord(row)">记录</el-button>
+            <el-button type="info" size="small" @click="onMonitorSwitchRecord(row)">记录</el-button>
           </template>
         </el-table-column>
       </el-table>
@@ -368,14 +368,7 @@
  */
 import { ref, computed } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
-import {
-  Sunny,
-  Lightning,
-  Grid,
-  List,
-  Search,
-  RefreshLeft
-} from '@element-plus/icons-vue'
+import { Sunny, Lightning, Grid, List, Search, Refresh } from '@element-plus/icons-vue'
 import { usePresetTable } from '@/shared/composables/usePresetTable'
 import { useDrawerInspector } from '@/shared/composables/useDrawerInspector'
 
@@ -806,7 +799,7 @@ const onDimmingBatch = () => {
  * 查看记录：打开详情抽屉并定位至开关记录
  * @param {Object} lamp 目标灯具
  */
-const onViewSwitchRecord = (lamp) => {
+const onMonitorSwitchRecord = (lamp) => {
   lampInspector.openInspector(lamp)
 }
 </script>

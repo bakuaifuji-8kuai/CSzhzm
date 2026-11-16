@@ -201,14 +201,14 @@
                   </div>
                 </div>
                 <template #reference>
-                  <el-button link type="primary" :icon="View" title="查看二维码" />
+                  <el-button link type="primary" :icon="Monitor" title="查看二维码" />
                 </template>
               </el-popover>
             </template>
           </el-table-column>
           <el-table-column label="操作" width="180" align="center" fixed="right">
             <template #default="{ row }">
-              <el-button type="primary" link size="small" @click="onViewDetail(row)">详情</el-button>
+              <el-button type="primary" link size="small" @click="onMonitorDetail(row)">详情</el-button>
               <el-button link size="small" :disabled="!canTrans(row.statusKey)" @click="onChangeStatus(row)">变更</el-button>
               <el-button type="danger" link size="small" :disabled="row.statusKey === 'scrapped'" @click="onApplyScrap(row)">报废</el-button>
             </template>
@@ -238,7 +238,7 @@
             <span class="zg-assetcard__net" :style="{ color: netValueColor(row.dep.depreciationProgress) }">
               ¥{{ row.dep.netValue.toLocaleString() }}
             </span>
-            <el-button type="primary" link size="small" @click="onViewDetail(row)">详情</el-button>
+            <el-button type="primary" link size="small" @click="onMonitorDetail(row)">详情</el-button>
           </div>
         </article>
       </div>
@@ -262,7 +262,7 @@
  */
 import { ref, reactive, computed, onMounted, onUnmounted, h } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
-import { House, Cpu, Goods, Setting, Management, View, Plus, Filter, Download, Warning, List, Grid, Search, Refresh, Delete, Document, Files, Monitor, Coin, TrendCharts } from "@element-plus/icons-vue"
+import { House, Cpu, Goods, Setting, Management, Monitor, Plus, Filter, Download, Warning, List, Grid, Search, Refresh, Delete, Document, Files, Coin, TrendCharts } from '@element-plus/icons-vue'
 import AssetDetail from './AssetDetail.vue'
 import QRCode from '@/components/asset/QRCode.vue'
 import {
@@ -596,7 +596,7 @@ function canTrans(s: AssetStatus) {
 // 动作
 // ============================================================
 function onRowClick(row: AssetRow) { detailRef.value?.open(row) }
-function onViewDetail(row: AssetRow) { detailRef.value?.open(row) }
+function onMonitorDetail(row: AssetRow) { detailRef.value?.open(row) }
 
 function onChangeStatus(row: AssetRow) {
   ElMessageBox.prompt('请输入备注', '变更状态：' + row.code, {

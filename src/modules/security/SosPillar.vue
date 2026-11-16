@@ -26,7 +26,7 @@
     <!-- ============ KPI ============ -->
     <div class="zg-kpi">
       <div class="zg-kpi__cell">
-        <div class="zg-kpi__icon"><el-icon :size="20"><OfficeBuilding /></el-icon></div>
+        <div class="zg-kpi__icon"><el-icon :size="20"><School /></el-icon></div>
         <div class="zg-kpi__body">
           <div class="zg-kpi__num">92</div>
           <div class="zg-kpi__lbl">在役应急柱</div>
@@ -220,11 +220,7 @@
 
 <script setup>
 import { ref, computed } from 'vue'
-import {
-  Promotion, Microphone, PhoneFilled, Headset, CircleClose, VideoPause,
-  OfficeBuilding, CircleCheck, Warning, Timer, Location, Clock, Service,
-  VideoCamera, Bell, Monitor, Van, CircleCheckFilled
-} from '@element-plus/icons-vue'
+import { Promotion, Microphone, PhoneFilled, Headset, CircleClose, VideoPause, School, CircleCheck, Warning, Timer, Location, Clock, Service, VideoCamera, Bell, Monitor, CircleCheckFilled } from '@element-plus/icons-vue'
 
 const detailVisible = ref(false)
 const focusPillar = ref(null)
@@ -272,7 +268,7 @@ const sosTrajectory = ref([
   { title: 'SOS 触发', time: '14:22:08', desc: '游客在 SOS-018 按下紧急按钮', done: true, active: false, icon: Warning },
   { title: '调度中心接听', time: '14:22:15', desc: '值班员张工在 7 秒内接通对讲', done: true, active: false, icon: Headset },
   { title: '联动 110 / 120', time: '14:22:32', desc: '后台自动同步报警信息至岳麓区分局', done: true, active: false, icon: Monitor },
-  { title: '巡逻车派单', time: '14:23:10', desc: '岳麓区巡逻车（湘A·警 085）接单前往', done: true, active: true, icon: Van },
+  { title: '巡逻车派单', time: '14:23:10', desc: '岳麓区巡逻车（湘A·警 085）接单前往', done: true, active: true, icon: Truck },
   { title: '医护到场', time: '—', desc: '预计 14:28 到达现场', done: false, active: false, icon: CircleCheck },
   { title: '事件解决', time: '—', desc: '现场处置完毕，记录归档', done: false, active: false, icon: CircleCheckFilled },
 ])

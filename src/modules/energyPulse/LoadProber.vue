@@ -320,14 +320,7 @@
  */
 import { ref, computed, nextTick } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
-import {
-  Odometer,
-  Search,
-  Grid,
-  List,
-  RefreshLeft,
-  Histogram
-} from '@element-plus/icons-vue'
+import { Odometer, Search, Grid, List, Refresh, Histogram } from '@element-plus/icons-vue'
 import { usePresetTable } from '@/shared/composables/usePresetTable'
 import { useDrawerInspector } from '@/shared/composables/useDrawerInspector'
 

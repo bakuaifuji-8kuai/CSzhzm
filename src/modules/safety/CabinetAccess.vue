@@ -33,7 +33,7 @@
         </div>
       </div>
       <div class="zg-metrics__cell zg-metrics__cell--warn">
-        <div class="zg-metrics__icon"><el-icon :size="20"><UserFilled /></el-icon></div>
+        <div class="zg-metrics__icon"><el-icon :size="20"><User /></el-icon></div>
         <div class="zg-metrics__body">
           <div class="zg-metrics__num">23</div>
           <div class="zg-metrics__lbl">外部人员开门</div>
@@ -152,7 +152,7 @@
 
 <script setup>
 import { ref, computed } from 'vue'
-import { Camera, Key, Timer, UserFilled, CircleCheck, Search, Download } from "@element-plus/icons-vue"
+import { Camera, Key, Timer, User, CircleCheck, Search, Download } from "@element-plus/icons-vue"
 
 const cabinetFilter = ref('')
 const methodFilter = ref('')

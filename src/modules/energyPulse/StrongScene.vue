@@ -408,15 +408,7 @@
  */
 import { ref, computed } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
-import {
-  Lightning,
-  Plus,
-  Grid,
-  List,
-  Search,
-  RefreshLeft,
-  Delete
-} from '@element-plus/icons-vue'
+import { Lightning, Plus, Grid, List, Search, Refresh, Delete } from '@element-plus/icons-vue'
 import { usePresetTable } from '@/shared/composables/usePresetTable'
 import { useFormDraft } from '@/shared/composables/useFormDraft'
 import { useDrawerInspector } from '@/shared/composables/useDrawerInspector'

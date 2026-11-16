@@ -31,7 +31,7 @@
     <!-- KPI 指标卡 -->
     <div class="zg-duty__kpis">
       <div class="cell cell--primary">
-        <div class="cell__icon"><el-icon :size="20"><UserFilled /></el-icon></div>
+        <div class="cell__icon"><el-icon :size="20"><User /></el-icon></div>
         <div class="cell__body">
           <span class="num">{{ todayCount }}</span>
           <span class="lbl">今日值班人数</span>
@@ -261,9 +261,7 @@
 <script setup>
 import { ref, computed, watch } from 'vue'
 import { ElMessage } from 'element-plus'
-import {
-  Calendar, Plus, ArrowLeft, ArrowRight, UserFilled, Cpu, CircleCheck, Warning, User, Tickets
-} from "@element-plus/icons-vue"
+import { Calendar, Plus, ArrowLeft, ArrowRight, User, Cpu, CircleCheck, Warning, Tickets } from '@element-plus/icons-vue'
 import { staff } from '@/shared/stores/opsOrgStore'
 
 // ============ 基础状态 ============
